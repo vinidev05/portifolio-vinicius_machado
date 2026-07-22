@@ -5,11 +5,15 @@ export const Card = styled.article`
   border-radius: 16px;
   overflow: hidden;
 
-  transition: .3s;
+  transition: .35s;
 
-  &:hover {
+  &:hover{
     transform: translateY(-10px);
     box-shadow: 0 18px 35px rgba(59,130,246,.25);
+  }
+
+  &:hover img{
+    transform: scale(1.05);
   }
 `;
 
@@ -29,6 +33,14 @@ export const Image = styled.div`
   color:white;
   font-size:1.2rem;
   font-weight:bold;
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0.4s;
 `;
 
 export const Content = styled.div`

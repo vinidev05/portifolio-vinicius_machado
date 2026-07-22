@@ -1,6 +1,7 @@
 import {
   Card,
   Image,
+  ProjectImage,
   Content,
   Title,
   Description,
@@ -14,7 +15,14 @@ const ProjectCard = ({ project }) => {
   return (
     <Card>
       <Image>
-        <span>Imagem do Projeto</span>
+        {project.image ? (
+          <ProjectImage
+            src={project.image}
+            alt={project.title}
+          />
+        ) : (
+          <span>Imagem do Projeto</span>
+        )}
       </Image>
 
       <Content>
@@ -41,7 +49,7 @@ const ProjectCard = ({ project }) => {
           </Button>
 
           <Button
-            href={project.demo}
+            href={project.demo || "#"}
             target="_blank"
           >
             Demo
