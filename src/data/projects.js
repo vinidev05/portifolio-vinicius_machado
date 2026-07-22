@@ -1,3 +1,10 @@
+import portalViagens from "../assets/images/Portal-Viagens.png";
+import microfrontend from "../assets/images/Microfrontend-Wepack.png";
+import blogNext from "../assets/images/Blog-Next.png";
+import listaTarefas from "../assets/images/Lista-Tarefas.png";
+import catalogoLivros from "../assets/images/Catalogo-Livros.png";
+
+
 const projects = [
   {
     id: 1,
@@ -12,11 +19,11 @@ const projects = [
       "Tailwind CSS"
     ],
 
-    github: "https://github.com/vinidev05",
+    github: "https://github.com/vinidev05/Portal-Viagens-Otimizado",
 
     demo: "",
 
-    image: "/images/portal-viagens.png"
+    image: portalViagens
   },
 
   {
@@ -33,11 +40,11 @@ const projects = [
       "Vite"
     ],
 
-    github: "https://github.com/vinidev05",
+    github: "https://github.com/vinidev05/microfrontend-wepack",
 
     demo: "",
 
-    image: "/images/microfrontends.png"
+    image: microfrontend
   },
 
   {
@@ -54,11 +61,11 @@ const projects = [
       "TypeScript"
     ],
 
-    github: "https://github.com/vinidev05",
+    github: "https://github.com/vinidev05/blog-nextjs",
 
     demo: "",
 
-    image: "/images/blog.png"
+    image: blogNext
   },
 
   {
@@ -75,11 +82,11 @@ const projects = [
       "Styled Components"
     ],
 
-    github: "https://github.com/vinidev05",
+    github: "https://github.com/vinidev05/Lista-Tarefas-Next15",
 
     demo: "",
 
-    image: "/images/todo.png"
+    image: listaTarefas
   },
 
   {
@@ -96,11 +103,11 @@ const projects = [
       "JavaScript"
     ],
 
-    github: "https://github.com/vinidev05",
+    github: "https://github.com/vinidev05/Catalogo-Livros",
 
     demo: "",
 
-    image: "/images/catalogo.png"
+    image: catalogoLivros
   }
 ];
 
