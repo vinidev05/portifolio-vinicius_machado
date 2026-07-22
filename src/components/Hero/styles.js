@@ -147,6 +147,13 @@ export const Circle = styled.div`
 
   background: linear-gradient(135deg, #3b82f6, #7c3aed);
 
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%
+    }
+    
   display: flex;
   justify-content: center;
   align-items: center;

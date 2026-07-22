@@ -13,6 +13,8 @@ import {
   Circle,
 } from "./styles";
 
+import fotoPerfil from "../../assets/images/foto-perfil.jpg"
+
 const Hero = () => {
   return (
     <Container>
@@ -66,7 +68,7 @@ const Hero = () => {
 
       <ImageContainer>
         <Circle>
-          👨‍💻
+          <img src={fotoPerfil} alt="Vinícius Eduardo" />
         </Circle>
       </ImageContainer>
     </Container>

@@ -39,7 +39,9 @@ npm run dev
 
 ## 🌐 Deploy
 
-Link da aplicação:
+Acesse a versão online do projeto:
+
+https://portifolio-vinicius-machado.vercel.app
 
 ---
 
