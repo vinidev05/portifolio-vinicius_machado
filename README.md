@@ -41,12 +41,10 @@ npm run dev
 
 Link da aplicação:
 
-
-
 ---
 
 ## Repositório
-
+https://github.com/vinidev05/portifolio-vinicius_machado
 
 
 ## 👨‍💻 Autor
