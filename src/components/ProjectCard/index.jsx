@@ -4,6 +4,7 @@ import {
   ProjectImage,
   Content,
   Title,
+  Info,
   Description,
   Technologies,
   Badge,
@@ -27,6 +28,10 @@ const ProjectCard = ({ project }) => {
 
       <Content>
         <Title>{project.title}</Title>
+
+        <info>
+            {project.year} • {project.status}
+        </info>
 
         <Description>
           {project.description}

@@ -52,6 +52,13 @@ export const Title = styled.h3`
   margin-bottom:15px;
 `;
 
+export const Info = styled.small`
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+`;
+
 export const Description = styled.p`
   color:#cbd5e1;
   line-height:1.7;

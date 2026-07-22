@@ -9,6 +9,11 @@ const projects = [
   {
     id: 1,
     title: "Portal Viagens",
+
+    year: "2026",
+
+    status: "Concluído",
+
     description:
       "Aplicação desenvolvida em Next.js com foco em otimização de desempenho utilizando Lighthouse, imagens WebP, lazy loading e boas práticas de SEO.",
 
@@ -29,6 +34,10 @@ const projects = [
   {
     id: 2,
     title: "Micro Frontends",
+
+    year: "2026",
+
+    status: "Concluído",
 
     description:
       "Projeto utilizando Module Federation para dividir a aplicação em micros independentes, integrando Cardápio, Pedido e Container.",
@@ -52,6 +61,10 @@ const projects = [
 
     title: "Blog Next.js",
 
+    year: "2026",
+
+    status: "Concluído",
+
     description:
       "Blog desenvolvido em Next.js utilizando rotas dinâmicas, geração estática de páginas e otimizações para SEO.",
 
@@ -73,6 +86,10 @@ const projects = [
 
     title: "Lista de Tarefas",
 
+    year: "2026",
+
+    status: "Concluído",
+
     description:
       "Aplicação para gerenciamento de tarefas desenvolvida em React utilizando componentes reutilizáveis.",
 
@@ -93,6 +110,10 @@ const projects = [
     id: 5,
 
     title: "Catálogo de Produtos",
+
+    year: "2026",
+
+    status: "Concluído",
 
     description:
       "Projeto desenvolvido em React apresentando um catálogo de produtos organizado em componentes reutilizáveis.",
