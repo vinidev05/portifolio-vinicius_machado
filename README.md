@@ -1,16 +1,60 @@
-# React + Vite
+# Portfólio - Vinícius Eduardo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Sobre
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido como atividade final do curso de Front-End da EBAC.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo é apresentar meus principais projetos, habilidades e informações para contato por meio de uma aplicação desenvolvida em React.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- Styled Components
+- React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Projetos apresentados
+
+- Portal Viagens
+- Micro Frontends
+- Blog Next.js
+- Lista de Tarefas
+- Catálogo de Livros
+
+---
+
+## ▶️ Como executar
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🌐 Deploy
+
+Link da aplicação:
+
+
+
+---
+
+## Repositório
+
+
+
+## 👨‍💻 Autor
+
+Vinícius Eduardo
+
+GitHub:
+https://github.com/vinidev05
+
+Email:
+vini06041013@gmail.com
