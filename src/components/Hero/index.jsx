@@ -5,6 +5,8 @@ import {
   Title,
   Description,
   Buttons,
+  Stats,
+  Stat,
   PrimaryButton,
   SecondaryButton,
   ImageContainer,
@@ -39,6 +41,27 @@ const Hero = () => {
             GitHub
           </SecondaryButton>
         </Buttons>
+        <Stats>
+          <Stat>
+            <h3>5+</h3>
+            <p>Projetos</p>
+          </Stat>
+
+          <Stat>
+            <h3>100%</h3>
+            <p>Aprovados</p>
+          </Stat>
+
+          <Stat>
+            <h3>React</h3>
+            <p>Principal</p>
+          </Stat>
+
+          <Stat>
+            <h3>Full Stack</h3>
+            <p>Em evolução</p>
+          </Stat>
+        </Stats>
       </Content>
 
       <ImageContainer>

@@ -5,6 +5,9 @@ export const Card = styled.article`
   border-radius: 16px;
   overflow: hidden;
 
+  display: flex;
+  flex-direction: column;
+
   transition: .35s;
 
   &:hover{
@@ -37,14 +40,20 @@ export const Image = styled.div`
 
 export const ProjectImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: 220px;
+
   object-fit: cover;
 
-  transition: 0.4s;
+  transition: .4s;
 `;
 
 export const Content = styled.div`
-  padding:25px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 `;
 
 export const Title = styled.h3`
@@ -60,9 +69,12 @@ export const Info = styled.small`
 `;
 
 export const Description = styled.p`
-  color:#cbd5e1;
-  line-height:1.7;
-  margin-bottom:20px;
+  color: #cbd5e1;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+
+  flex: 1;
 `;
 
 export const Technologies = styled.div`
@@ -85,8 +97,10 @@ export const Badge = styled.span`
 `;
 
 export const Buttons = styled.div`
-  display:flex;
-  gap:15px;
+  display: flex;
+  gap: 15px;
+
+  margin-top: auto;
 `;
 
 export const Button = styled.a`
