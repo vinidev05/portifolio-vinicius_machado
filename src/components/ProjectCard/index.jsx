@@ -29,9 +29,9 @@ const ProjectCard = ({ project }) => {
       <Content>
         <Title>{project.title}</Title>
 
-        <info>
+        <Info>
             {project.year} • {project.status}
-        </info>
+        </Info>
 
         <Description>
           {project.description}
