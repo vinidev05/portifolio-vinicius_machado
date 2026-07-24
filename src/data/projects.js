@@ -26,7 +26,7 @@ const projects = [
 
     github: "https://github.com/vinidev05/Portal-Viagens-Otimizado",
 
-    demo: "",
+    demo: "https://portal-viagens-sigma.vercel.app/",
 
     image: portalViagens
   },
@@ -76,7 +76,7 @@ const projects = [
 
     github: "https://github.com/vinidev05/blog-nextjs",
 
-    demo: "",
+    demo: "https://vercel.com/vinidev05s-projects/blog-nextjs-h14a/93p6nQBv15rpvHW8ZT4AZxZm3TE9",
 
     image: blogNext
   },
