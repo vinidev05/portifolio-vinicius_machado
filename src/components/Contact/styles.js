@@ -21,112 +21,88 @@ export const Cards = styled.div`
 export const Card = styled.div`
   background: #1e293b;
   width: 320px;
-
   padding: 40px;
-
   border-radius: 16px;
-
   text-align: center;
-
-  transition: .3s;
-
+  transition: 0.3s;
   color: white;
 
-  svg{
-    color:#3b82f6;
-    margin-bottom:20px;
+  svg {
+    color: #3b82f6;
+    margin-bottom: 20px;
   }
 
-  &:hover{
+  &:hover {
     transform: translateY(-8px);
-
-    box-shadow:0 12px 30px rgba(59,130,246,.25);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
   }
 `;
 
 export const CardTitle = styled.h3`
-  margin-bottom:20px;
+  margin-bottom: 20px;
 `;
 
 export const CardText = styled.p`
-  color:#cbd5e1;
+  color: #cbd5e1;
 `;
 
 export const Link = styled.a`
-  color:#3b82f6;
+  color: #3b82f6;
 
-  &:hover{
-    text-decoration:underline;
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
 export const Form = styled.form`
-  max-width: 700px;
   margin: 70px auto 0;
+  max-width: 700px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 `;
 
 export const Input = styled.input`
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 10px;
   background: #1e293b;
   color: white;
-
-  border: 2px solid transparent;
-  border-radius: 10px;
-
-  padding: 16px;
-
   font-size: 1rem;
 
-  transition: .3s;
-
-  &:focus{
-    outline:none;
-    border-color:#3b82f6;
+  &:focus {
+    outline: none;
+    border-color: #3b82f6;
   }
 `;
 
 export const TextArea = styled.textarea`
-  background:#1e293b;
-  color:white;
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+  resize: vertical;
+  font-size: 1rem;
 
-  border:2px solid transparent;
-  border-radius:10px;
-
-  padding:16px;
-
-  font-size:1rem;
-
-  resize:none;
-
-  transition:.3s;
-
-  &:focus{
-    outline:none;
-    border-color:#3b82f6;
+  &:focus {
+    outline: none;
+    border-color: #3b82f6;
   }
 `;
 
 export const Button = styled.button`
-  background:#3b82f6;
-  color:white;
+  padding: 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 
-  border:none;
-  border-radius:10px;
-
-  padding:16px;
-
-  font-size:1rem;
-  font-weight:bold;
-
-  cursor:pointer;
-
-  transition:.3s;
-
-  &:hover{
-    background:#2563eb;
-    transform:translateY(-3px);
+  &:hover {
+    background: #2563eb;
   }
 `;

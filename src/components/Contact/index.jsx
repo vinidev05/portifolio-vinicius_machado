@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaEnvelope, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 
 import {
@@ -15,6 +16,44 @@ import {
 } from "./styles";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    nome: "",
+    email: "",
+    mensagem: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const assunto = `Contato de ${form.nome}`;
+
+    const corpo = `
+Nome: ${form.nome}
+
+Email: ${form.email}
+
+Mensagem:
+${form.mensagem}
+    `;
+
+    window.location.href = `mailto:vini06041013@gmail.com?subject=${encodeURIComponent(
+      assunto
+    )}&body=${encodeURIComponent(corpo)}`;
+
+    setForm({
+      nome: "",
+      email: "",
+      mensagem: "",
+    });
+  };
+
   return (
     <Container id="contato">
       <Title>Contato</Title>
@@ -39,6 +78,7 @@ const Contact = () => {
             <Link
               href="https://github.com/vinidev05"
               target="_blank"
+              rel="noopener noreferrer"
             >
               github.com/vinidev05
             </Link>
@@ -49,41 +89,42 @@ const Contact = () => {
           <FaMapMarkerAlt size={40} />
           <CardTitle>Localização</CardTitle>
 
-          <CardText>
-            Charqueadas - RS
-          </CardText>
+          <CardText>Charqueadas - RS</CardText>
         </Card>
       </Cards>
 
-      <Form
-          action="https://formsubmit.co/vini06041013@gmail.com"
-          method="POST"
-        >
-          <Input
-            type="text"
-            name="name"
-            placeholder="Seu nome"
-            required
-          />
+      <Form onSubmit={handleSubmit}>
+        <Input
+          type="text"
+          name="nome"
+          placeholder="Seu nome"
+          required
+          value={form.nome}
+          onChange={handleChange}
+        />
 
-          <Input
-            type="email"
-            name="email"
-            placeholder="Seu e-mail"
-            required
-          />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Seu e-mail"
+          required
+          value={form.email}
+          onChange={handleChange}
+        />
 
-          <TextArea
-            name="message"
-            placeholder="Digite sua mensagem..."
-            rows="6"
-            required
-          />
+        <TextArea
+          name="mensagem"
+          rows="6"
+          placeholder="Digite sua mensagem..."
+          required
+          value={form.mensagem}
+          onChange={handleChange}
+        />
 
-          <Button type="submit">
-            Enviar mensagem
-          </Button>
-        </Form>
+        <Button type="submit">
+          Enviar mensagem
+        </Button>
+      </Form>
     </Container>
   );
 };
