@@ -1,47 +1,31 @@
 import {
   Card,
   Image,
-  ProjectImage,
-  Content,
-  Title,
   Info,
+  Title,
+  Year,
   Description,
   Technologies,
-  Badge,
+  Tech,
   Buttons,
   Button,
 } from "./styles";
 
-const ProjectCard = ({ project }) => {
+function ProjectCard({ project }) {
   return (
     <Card>
-      <Image>
-        {project.image ? (
-          <ProjectImage
-            src={project.image}
-            alt={project.title}
-          />
-        ) : (
-          <span>Imagem do Projeto</span>
-        )}
-      </Image>
+      <Image src={project.image} alt={project.title} />
 
-      <Content>
+      <Info>
         <Title>{project.title}</Title>
 
-        <Info>
-            {project.year} • {project.status}
-        </Info>
+        <Year>{project.year}</Year>
 
-        <Description>
-          {project.description}
-        </Description>
+        <Description>{project.description}</Description>
 
         <Technologies>
           {project.technologies.map((tech) => (
-            <Badge key={tech}>
-              {tech}
-            </Badge>
+            <Tech key={tech}>{tech}</Tech>
           ))}
         </Technologies>
 
@@ -49,20 +33,24 @@ const ProjectCard = ({ project }) => {
           <Button
             href={project.github}
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </Button>
 
-          <Button
-            href={project.demo || "#"}
-            target="_blank"
-          >
-            Demo
-          </Button>
+          {project.demo && (
+            <Button
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demo
+            </Button>
+          )}
         </Buttons>
-      </Content>
+      </Info>
     </Card>
   );
-};
+}
 
 export default ProjectCard;
