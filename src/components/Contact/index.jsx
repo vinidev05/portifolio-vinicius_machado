@@ -8,6 +8,10 @@ import {
   CardTitle,
   CardText,
   Link,
+  Form,
+  Input,
+  TextArea,
+  Button,
 } from "./styles";
 
 const Contact = () => {
@@ -50,6 +54,36 @@ const Contact = () => {
           </CardText>
         </Card>
       </Cards>
+
+      <Form
+          action="https://formsubmit.co/vini06041013@gmail.com"
+          method="POST"
+        >
+          <Input
+            type="text"
+            name="name"
+            placeholder="Seu nome"
+            required
+          />
+
+          <Input
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+          />
+
+          <TextArea
+            name="message"
+            placeholder="Digite sua mensagem..."
+            rows="6"
+            required
+          />
+
+          <Button type="submit">
+            Enviar mensagem
+          </Button>
+        </Form>
     </Container>
   );
 };
