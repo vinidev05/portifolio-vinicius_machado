@@ -1,12 +1,12 @@
 import {
   Card,
-  Image,
-  Info,
+  ProjectImage,
+  Content,
   Title,
   Year,
   Description,
   Technologies,
-  Tech,
+  Badge,
   Buttons,
   Button,
 } from "./styles";
@@ -14,9 +14,12 @@ import {
 function ProjectCard({ project }) {
   return (
     <Card>
-      <Image src={project.image} alt={project.title} />
+      <ProjectImage
+        src={project.image}
+        alt={project.title}
+      />
 
-      <Info>
+      <Content>
         <Title>{project.title}</Title>
 
         <Year>{project.year}</Year>
@@ -25,7 +28,7 @@ function ProjectCard({ project }) {
 
         <Technologies>
           {project.technologies.map((tech) => (
-            <Tech key={tech}>{tech}</Tech>
+            <Badge key={tech}>{tech}</Badge>
           ))}
         </Technologies>
 
@@ -48,7 +51,7 @@ function ProjectCard({ project }) {
             </Button>
           )}
         </Buttons>
-      </Info>
+      </Content>
     </Card>
   );
 }

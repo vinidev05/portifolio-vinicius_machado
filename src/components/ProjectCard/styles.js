@@ -8,34 +8,16 @@ export const Card = styled.article`
   display: flex;
   flex-direction: column;
 
-  transition: .35s;
+  transition: 0.35s;
 
-  &:hover{
+  &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 18px 35px rgba(59,130,246,.25);
+    box-shadow: 0 18px 35px rgba(59, 130, 246, 0.25);
   }
 
-  &:hover img{
+  &:hover img {
     transform: scale(1.05);
   }
-`;
-
-export const Image = styled.div`
-  height: 220px;
-
-  background: linear-gradient(
-    135deg,
-    #3b82f6,
-    #7c3aed
-  );
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  color:white;
-  font-size:1.2rem;
-  font-weight:bold;
 `;
 
 export const ProjectImage = styled.img`
@@ -44,7 +26,7 @@ export const ProjectImage = styled.img`
 
   object-fit: cover;
 
-  transition: .4s;
+  transition: 0.4s;
 `;
 
 export const Content = styled.div`
@@ -57,15 +39,14 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h3`
-  color:white;
-  margin-bottom:15px;
+  color: white;
+  margin-bottom: 10px;
 `;
 
-export const Info = styled.small`
-  display: block;
+export const Year = styled.small`
   color: #94a3b8;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
+  margin-bottom: 18px;
+  display: block;
 `;
 
 export const Description = styled.p`
@@ -78,47 +59,49 @@ export const Description = styled.p`
 `;
 
 export const Technologies = styled.div`
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
-  margin-bottom:25px;
+  margin-bottom: 25px;
 `;
 
 export const Badge = styled.span`
-  background:#3b82f6;
-  color:white;
+  background: #3b82f6;
+  color: white;
 
-  padding:6px 14px;
+  padding: 6px 14px;
 
-  border-radius:30px;
+  border-radius: 30px;
 
-  font-size:.85rem;
+  font-size: 0.85rem;
 `;
 
 export const Buttons = styled.div`
   display: flex;
   gap: 15px;
-
   margin-top: auto;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 export const Button = styled.a`
-  flex:1;
+  flex: 1;
 
-  background:#2563eb;
+  background: #2563eb;
+  color: white;
 
-  color:white;
+  text-align: center;
 
-  text-align:center;
+  padding: 12px;
 
-  padding:12px;
+  border-radius: 8px;
 
-  border-radius:8px;
+  transition: 0.3s;
 
-  transition:.3s;
-
-  &:hover{
-    background:#1d4ed8;
+  &:hover {
+    background: #1d4ed8;
   }
 `;
